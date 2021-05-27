@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Shawty | Home {% endblock %}
+
+{% block content %}
+<div class = "container">
+	<h1 class="heading">
+		Shawty
+	</h1>
+	<h3 class="subheading">
+		Paste a long URL below to make it shorter
+	</h3>
+	<form class="url-input" action="/" method = "POST">
+		<div class = "form-row">
+			<input type="url" name="long-url" placeholder="Long URL goes here" id = "long-url">
+			<input type="submit" name="submit" value = "Shorten" id = "submit-btn">
+		</div>
+	</form>
+	
+		{% with msgs = get_flashed_messages() %}
+			{% if msgs %}
+				<div class="subheading" style="color: rgb(128, 7, 7);"> {{ msgs[0] }} </div>
+			{% endif %}
+		{% endwith %}
+</div>
+
+
+{% endblock %}

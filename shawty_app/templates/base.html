@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} {% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico"/>
+	{% block style %} {% endblock %}
+</head>
+<body>
+	<div class="navbar">
+		<div class="nav-link" style="margin-right:auto ; "><a href="/" style="color: #e64510; font-size: larger;">Shawty</a></div>
+		<div class="nav-link"><a href="/">Home</a></div>
+		<div class="nav-link"><a href="/about">About</a></div>
+	</div>
+	<main>
+		{% block content %}
+		{% endblock %}
+	</main>
+
+	<script></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+1. Create the structure
+2. Create the homepage UI
+3. Setup the routes to get the request from the url input
+4. Setup a database model
+5. Find a way to make the random chars url
+6. Add the og url and short url to the database model
+7. Setup the route for redirecting. Check if it works tho.
+8. Check the short url in the database and redirect to the og link. Also increment count.
+9. Redirect to 404 if url not in db
+10. Create a 404 page
